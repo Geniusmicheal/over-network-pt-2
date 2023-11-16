@@ -5,7 +5,7 @@ import {
 import { promises as fs } from 'fs';
 import { stripUsername } from './utils';
 
-const AUTH_FILE = '../app/storage/auth.json';
+const AUTH_FILE = './storage/auth.json';
 
 export async function getUsers() {
   const fileContents = await fs.readFile(AUTH_FILE, 'utf8');
